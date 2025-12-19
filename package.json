@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "lucide-react": "^0.561.0"
+  }
+}

@@ -1,0 +1,86 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/* Custom CSS file ke end me paste karein */
+
+/* ===============================
+   Navbar Glassmorphism + Neon Styling
+   =============================== */
+
+/* Navbar container */
+.navbar {
+  background: rgba(10, 10, 30, 0.8); /* Dark semi-transparent */
+  backdrop-filter: blur(16px);       /* Stronger blur */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6); /* Depth */
+  border-radius: 12px; /* Rounded edges */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar links */
+.navbar__item {
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar__item:hover {
+  color: #00ffff !important; /* Neon cyan on hover */
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.7),
+               0 0 24px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+}
+
+/* Navbar title with animated gradient */
+.navbar__title {
+  font-weight: 900;
+  background: linear-gradient(90deg, #00ffff, #0077ff, #ff00ff, #ff8a00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 6s ease infinite;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional: Add subtle hover effect for title */
+.navbar__title:hover {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
+               0 0 20px rgba(0, 255, 255, 0.4);
+  cursor: default;
+}
+
+/* Optional: navbar shadow on scroll */
+.navbar--scrolled {
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.7);
+}
