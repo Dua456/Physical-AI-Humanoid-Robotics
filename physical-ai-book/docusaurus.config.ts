@@ -13,7 +13,7 @@ const config: Config = {
   },
 
   // Site URL & base URL
-  url: '',
+  url: 'https://yourdomain.com',
   baseUrl: '/docs',
 
   // GitHub deployment info
