@@ -13,7 +13,7 @@ const config: Config = {
   },
 
   // Site URL & base URL
-  url: 'https://Physical-AI-Humanoid-Robotics.vercel.app/',
+  url: '',
   baseUrl: '/docs',
 
   // GitHub deployment info
